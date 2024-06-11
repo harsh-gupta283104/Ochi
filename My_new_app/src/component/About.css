@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.scroll-up .blur-background {
+    filter: blur(2vw);
+  }
+  
+  /* Adjust blur intensity as needed */
+  
+
+.content h1, .content-text{ 
+    margin-right: 12vw; 
+    margin-top: 1vw;
+}
+.content h1{
+    position: relative;
+    top: 0.2vw;
+    left: 3vw;
+}
+.content-text p{
+    margin-right: 12vw;
+    font-weight: 400;
+}
+
+.content-span a,.content-span span{
+    position: relative;
+    top: 5vw;
+    right: 2vw;
+    font-weight: 495;
+}
+.content-span a{
+    font-size: 15px;
+}
+.span1 {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .cardContainer:hover .span1 {
+    transform: translateY(0);
+  }
+.span2{
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.cardContainer2:hover .span2{
+    transform: translateY(0);
+}
+.card:hover{
+    scale: 96%;
+}
+.card{
+    cursor: pointer;
+    transition: scale 0.4s ease-in-out;
+}
